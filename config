@@ -1,0 +1,17 @@
+general {
+    	color = '#FFFFFF'
+    	color_good = '#FFFFFF'
+    	color_bad = '#FFFFFF'
+    	color_degraded = '#FFFFFF'
+}
+
+order += "netdata"
+order += "sysdata"
+order += "diskdata"
+order += "external_script"
+
+external_script {
+	cache_timeout = 0.5
+    	format = "{output}"
+    	script_path = "/home/samurai/re3dstatus"
+}
